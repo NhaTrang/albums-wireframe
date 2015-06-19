@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="Styles/bootstrap.min.css" rel="stylesheet">
+    <link href="Styles/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,6 +19,8 @@
     <![endif]-->
   </head>
   <body>
+<!--
+Seems like a static navbar at the top
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -29,8 +32,28 @@
       <div class="navbar-text"><a class="navbar-link" href='#'>Contact</div>
     </div>
   </nav>
+-->
 
-  <div class="container text-center">
+
+  <ul class="nav navbar-nav" role="menu">
+    <li><a href="#">Home</a><span class="sr-only"></span></li>
+    <li><a href="#">About</a></li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" role="button" data-toggle="dropdown">Menu<span class="caret" /></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Album 1</a></li>
+        <li><a href="#">Album 2</a></li>
+      </ul>
+    </li>
+  </ul>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 bgimage">
+      <div class="bgimage-inside"></div>
+      </div>
+    </div>
   </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
